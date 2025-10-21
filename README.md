@@ -5,11 +5,3 @@ This portfolio showcases my skills, education, projects, certifications, and int
 
 ---
 
-## 🚀 Live Demo
-🔗 [View Portfolio on GitHub Pages](https://yourusername.github.io/nithin-portfolio/)
-
-*(Replace `yourusername` with your GitHub username after publishing.)*
-
----
-
-## 📁 Project Structure
