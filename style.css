@@ -1,0 +1,125 @@
+/* --- Basic Layout --- */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+header a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* --- Navbar --- */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  background-color: #00bcd4;
+  color: #111;
+  border-radius: 5px;
+}
+
+/* --- Search Bar --- */
+#search-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: 2px solid #00bcd4;
+  border-radius: 6px;
+}
+
+/* --- Main Sections --- */
+main {
+  width: 85%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+section {
+  background-color: white;
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+ul {
+  margin-left: 20px;
+  font-size: 1.05em;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95em;
+  margin-top: 30px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+  main {
+    width: 95%;
+  }
+  #searchInput {
+    width: 90%;
+  }
+}

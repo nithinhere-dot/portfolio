@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nithin Kumar M | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NITHIN KUMAR M</h1>
+    <p>Computer Science Student | Government Engineering College, Wayanad</p>
+    <p>
+      <a href="mailto:nithinkumar07062005@gmail.com">📧 nithinkumar07062005@gmail.com</a> |
+      ☎ 7902753542 |
+      <a href="https://linkedin.com/in/nithinkumark-dev" target="_blank">🔗 LinkedIn</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#interests">Interests</a>
+  </nav>
+
+  <!-- 🔍 Search Feature -->
+  <div id="search-container">
+    <input type="text" id="searchInput" placeholder="Search portfolio..." onkeyup="searchPortfolio()">
+  </div>
+
+  <main id="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a Computer Science student at Government Engineering College, Wayanad (graduating in 2026), 
+      passionate about software development, algorithms, and problem-solving. I love turning ideas 
+      into efficient, user-focused digital solutions and exploring emerging technologies like AI 
+      and Machine Learning.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Machine Learning:</strong> OpenCV, basic model training</li>
+        <li><strong>Web Development:</strong> React, Tailwind CSS, HTML, CSS</li>
+        <li><strong>Programming Languages:</strong> Go, Python, C</li>
+      </ul>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Innovative Thinking</li>
+        <li>Multi-Tasking</li>
+        <li>Team Collaboration</li>
+        <li>Problem Solving</li>
+        <li>Technical Adaptability</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Science</strong> – Government Engineering College, Wayanad (2022–2026)<br>
+          Current CGPA: 7.63/10</li>
+        <li><strong>Higher Secondary (Class 12)</strong> – Govt. HSS Kakkat (2022) | 95.6%</li>
+        <li><strong>Secondary (Class 10)</strong> – Govt. HSS Kakkat (2020) | 100%</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>GitHub Downloader CLI Tool</strong><br>
+        A command-line tool to download GitHub repositories without forking using the REST API. 
+        Handles nested folders and files efficiently.</li>
+
+        <li><strong>Wordle Game</strong><br>
+        A custom Wordle game built using React with real-time input validation, API-based dictionary 
+        checks, and modern UI using Tailwind CSS.</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p><strong>AI Internship – Acceleratex (2025)</strong><br>
+      Worked on data collection and analysis for the Wayanad landslide survey under the District Collector.</p>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>Programming • Machine Learning • Web Development • Open Source • Problem Solving • Technology Research</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Nithin Kumar M | Built with basic HTML, CSS & JS</p>
+  </footer>
+
+  <!-- 🔎 Simple JavaScript Search -->
+  <script>
+    function searchPortfolio() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const sections = document.querySelectorAll('main section');
+      let found = false;
+
+      sections.forEach(section => {
+        const text = section.innerText.toLowerCase();
+        if (text.includes(input)) {
+          section.style.display = 'block';
+          found = true;
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      // If nothing matches, show a message
+      if (!found && input.trim() !== "") {
+        document.getElementById('content').innerHTML = "<p style='text-align:center; font-size:1.2em;'>No results found...</p>";
+      } else if (input.trim() === "") {
+        location.reload(); // reloads sections if input cleared
+      }
+    }
+  </script>
+</body>
+</html>
